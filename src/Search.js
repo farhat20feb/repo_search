@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import logo from './git-logo.png';
 import ReactDOM from 'react-dom';
 import { Button } from 'react-bootstrap';
@@ -100,7 +100,7 @@ change = e => {
         );
     }
     let items =  this.state.items.items
-    //console.log(items);
+    
     if(this.state.isLoading1){
     return(
       
@@ -112,18 +112,16 @@ change = e => {
           <Col sm={{ size: 'auto', offset: 1 }}>
           <ListGroup>
         <ListGroupItem><b>Repository</b></ListGroupItem>
-        <ListGroupItem><Router>
+        <ListGroupItem>
             <div>
-               
-            <Link to={'/Users'} onClick={(e) => this.handleUser()}>Users</Link>
+            
         
-               
-               <Switch>
-               <Route exact path='/Users' component={Users} />
-                
-               </Switch>
+            <Link to={"/Users/"+this.state.name}>Users</Link>
+      
+
+      
             </div>
-         </Router></ListGroupItem>
+        </ListGroupItem>
       </ListGroup>
           </Col>
           <Col sm={{ size: 'auto', offset: 2 }}>
