@@ -28,12 +28,54 @@
 .heading{
   color: blue;
   margin-bottom: 0px;
-  font-size: 26px;
+  font-size: 20px;
+  font-weight: 600;
   cursor: pointer;
+  text-align: left;
 }
 .profile-image{
-height:140px;
-width:150px;
+height:230px;
+width:230px;
+border-radius: 7px;
+}
+.repo-title{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.desc{
+  word-wrap: break-word;
+  width:60%;
+  font-size: 14px;
+  color:gray;
+  text-align: left;
+}
+.updated-info{
+  text-align: left;
+  color: #586069 !important;
+  font-size: 12px;
+  
+}
+.table-bordered{
+  width: 90%!important;
+  margin-left: 40px;
+}
+.small-profile{
+  height:48px;
+  width:48px;
+}
+.media-head{
+  float: left;
+    margin-left: 12px;
+
+}
+.media-desc{
+
+}
+.score{
+  font-size: 14px;
+    font-family: monospace;
+    float:right;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

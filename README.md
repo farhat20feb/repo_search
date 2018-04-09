@@ -2432,3 +2432,21 @@ In the future, we might start automatically compiling incompatible third-party m
 ## Something Missing?
 
 If you have ideas for more “How To” recipes that should be on this page, [let us know](https://github.com/facebookincubator/create-react-app/issues) or [contribute some!](https://github.com/facebookincubator/create-react-app/edit/master/packages/react-scripts/template/README.md)
+
+## How to search Repositories 
+
+Run the server from command line by writting 'npm start' from the terminal.
+After pressing the enter,the server will be started,the browser will load the App component(By default) and display the output on the browser.
+There is a search box along with the submit button.The search box will 
+If  take the username as the input,after clicing on submit button, the result will display the list of all the users repositories (The Repo name,login name,description and last modified date).
+If we click on the the Link(highlighted in blue which contains 'login name' / 'repo name'),it will redirect us to the user's profile page.
+
+The user profile page contains the user's data (profile image,user's name,location,email,total no. of repositories,total no. of followers,total no. of following,and the list of repositories).
+
+The list of repositories contains the name of the repo,description and the language on which it is built.
+
+If you click on the repositories title,it will redirect you to the github where the code of the repository(the folder and the files are located).
+
+##### How to search users
+
+When you click on the user link which is located on the left side it will display the list of the users.
